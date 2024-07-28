@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profil.css" />
+    <title>Profilim</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; /* Beyaz arka plan */
+      }
+
+      .container {
+        width: 85%;
+        margin: 0 auto;
+      }
+
+      .container .baslik {
+        padding: 20px;
+        height: 100px;
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0px auto;
+        color: black; /* Mavi başlık rengi */
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      .container .secenekler {
+        display: flex;
+        display: inline-block;
+        flex-direction: column;
+        margin: 5px auto;
+        padding: 0px;
+        background-color: #ffffff; /* Beyaz arka plan */
+        border-radius: 5px;
+        /* Yatay uzaklık | Dikey uzaklık | Bulanıklık | Rengi */
+      }
+
+      .container .secenekler a {
+        display: flex;
+        border-radius: 5px;
+        margin: 5px auto;
+        border: 1px solid white; /* Mavi kenarlık */
+        padding: 10px;
+        color: black; /* Mavi yazı rengi */
+        text-decoration: none;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .container .secenekler a:hover {
+        background-color: #3f218c; /* Mavi arka plan hover rengi */
+        color: #ffffff; /* Beyaz yazı rengi hover durumunda */
+      }
+
+      .footer {
+        width: 100%;
+        margin: 0 auto;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="baslik"></div>
+      <hr />
+      <div class="secenekler">
+        <a href="">Kullanıcı Bilgilerim</a>
+        <a href="">Adres Bilgilerim</a>
+        <a href="">Ödeme Bilgilerim</a>
+        <a href="">Bildirim Tercihlerim</a>
+        <a href="">Yardım</a>
+      </div>
+    </div>
+    <div class="footer">merhaba</div>
+  </body>
+</html>

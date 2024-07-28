@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <a id="sitegiris" href="eco.html"></a>
+<head>
+    <style>
+        @media screen and (min-width: 1200px){
+    .animation-container {
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      font-size: 36px;
+      color: rgb(0, 0, 0);
+      /* Diğer büyük ekran stili özelliklerini buraya ekleyebilirsiniz */
+    }
+    }
+    @keyframes fadeIn {
+      0% {
+          opacity: 0;
+          transform: translateY(-50px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+    }
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="eco.html">
+  </head>
+<body>
+    <div class="animation-container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>www.ticaretlimani.com</h1>
+        <p>Ticaretin güvenli limanlarındasınız !</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Animasyonun bitmesini beklemek için bir süre tanımlıyoruz
+                setTimeout(function() {
+                    // Animasyonun bitiminde otomatik yönlendirme yapılıyor
+                    window.location.href = "eco.html";
+                }, 2500); // 5000 milisaniye (5 saniye) sonra yönlendirme yapılacak
+            });
+            </script>
+    </div>
+</body>
+</html>
